@@ -12,17 +12,6 @@
 </head>
 <body data-lang="en">
 
-<input type="checkbox" id="dark-toggle" class="dark-toggle-input">
-<label for="dark-toggle" class="dark-toggle-label">
-  <span class="icon sun">☀️</span>
-  <span class="icon moon">🌙</span>
-  <span class="ball"></span>
-</label>
-
-<div class="page-wrapper">
-  <!-- all your existing page content goes inside here -->
-</div>
-
 <header class="site">
   <div class="nav-inner">
     <a href="#top" class="brand">
@@ -41,6 +30,14 @@
       <div class="lang-toggle" role="group" aria-label="Language / Idioma">
         <button type="button" id="btnEn" class="active" onclick="setLang('en')">EN</button>
         <button type="button" id="btnPt" onclick="setLang('pt')">PT</button>
+      </div>
+      <div class="theme-toggle">
+        <input type="checkbox" id="dark-toggle" class="dark-toggle-input" aria-label="Toggle dark mode">
+        <label for="dark-toggle" class="dark-toggle-label">
+          <span class="icon sun" aria-hidden="true">☀️</span>
+          <span class="icon moon" aria-hidden="true">🌙</span>
+          <span class="ball"></span>
+        </label>
       </div>
       <button class="menu-btn" aria-label="Menu" onclick="document.getElementById('navLinks').classList.toggle('open')">
         <span></span><span></span><span></span>
